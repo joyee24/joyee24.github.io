@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  font-size: 30px;
+  overflow: scroll;
+}
+.font2{
+      font-family: 'IM Fell French Canon SC', serif;
+      font-size:30px;
+}
+.bcolor{
+ background-repeat: no-repeat;
+ background-size: 100% 390px;
+ //background-attachment: fixed;
+}
+.navbar-nav > li{
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:30px;
+  font-size:12px;
+  display:block;
+}
+.form-inline{
+  margin-left:400px;
+}
+.head{
+  line-height: 35%;  
+  font-family: 'Zilla Slab', serif;
+  padding: 0.05px;
+  text-align: left;
+  color:#0C090A;
+}
+.ck{
+  background-image:url("mainpic.jpeg");
+  padding: 10px;
+  background-size: 100% 490px;
+  margin-left:100px;
+  margin-right:100px;
+  height: 600px;
+  font-size:20px;
+  color:white;
+  background-repeat: no-repeat;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  height:50px
+  padding: 10px;
+  padding-top:0px;
+  padding-left:5px;
+}
+.column2 {
+  color:#151B54;
+  float: right;
+  width: 20%;
+  padding: 10px;
+
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.courses{
+  width: 70%;
+  background: pink;
+  border: 5px solid black;
+  padding: 50px 50px;
+  margin-left: 200px;
+  //text-align: center;
+}
+
+.register a:link, a:visited{
+	font-family: 'Zilla Slab', serif;
+  	background:#FFBA52FF;
+  	border: 4px aqua;
+  	padding: 30px 30px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+	float: center;
+	color:#151B54;
+}
+.register a:hover, a:active{
+  	background-color:#E55451;
+  	color: white;
+	font-size:20px;
+	}
+.content1 {
+	text-align:center;
+        font-size:30px;
+}
+.boka{
+  margin-top:100px;
+  margin-left:100px;
+  height:400px;
+  margin-right:100px;
+  background:#FF014A;
+}
+.boka2{
+  margin-left:100px;
+  height:400px;
+  margin-right:100px;
+  background:#FF014A;
+}
+.boka3{
+  margin-left:100px;
+  height:400px;
+  margin-right:100px;
+  background:#FF014A;
+}
+.colk{
+ float:left;
+ width:60%;
+ height:400px;
+   background:black;
+}
+.coll{
+ float:left;
+ width:40%;
+ height:400px;
+}
+.colm{
+ float:right;
+ width:40%;
+ height:400px;
+ background:#E74C3C;
+}
+.coln{
+ float:right;
+ width:60%;
+ height:400px;
+}
+.col1{
+    float: left;
+    overflow: hidden;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    float:left;
+    width:30%; 
+    margin-top:20px;
+   height:150px;
+    background:#2C3E50;
+   padding:35px;
+  color:white;
+   text-align:center;
+}
+
+.copyright
+{
+    overflow: hidden;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    height:150px;
+    width:30%;
+   float:left;
+   color:white;
+    padding:35px;
+    background:#2C3E50 ;
+    margin-top:20px;
+   text-align:center;
+}
+.col2{
+    float: right;
+    overflow: hidden; 
+    height:150px;
+    color:white;
+    padding:35px;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    float:right;
+    width:40%;
+    margin-top:20px;
+    background: #2C3E50 ;
+}
+.fa {
+  text-align:center;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+     

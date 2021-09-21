@@ -1,0 +1,326 @@
+<html>
+  <head>
+  <title>Section 1</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="exm.css">
+<link rel="stylesheet" href="alrt.css">
+
+  <script language="javascript">
+  
+  function customalert()
+  {
+  	this.render=function(dialog)
+  	{
+  		var winW=window.innerWidth;
+  		var winH=window.innerHeight;
+  		var dialogoverlay=document.getElementById('dialogoverlay');
+  		var dialogbox=document.getElementById('dialogbox');
+  		dialogoverlay.style.display="block";
+  		dialogoverlay.style.height=winH+"px";
+  		dialogbox.style.left=(winW/2)-(550*.5)+"px";
+  		dialogbox.style.top="200px";
+  		dialogbox.style.display="block";
+  		document.getElementById('dialogboxhead').innerHTML="CodExpert JAVA Knowledge Exam";
+  		document.getElementById('dialogboxbody').innerHTML=dialog;
+  		//document.getElementById('dialogboxfoot').innerHTML='<button onclick="Alert.ok()">OK</button>';
+  	}
+  	this.ok=function()
+  	{
+  		document.getElementById('dialogbox').style.display="none";
+  		document.getElementById('dialogoverlay').style.display="none";
+  		
+  	}
+  }
+var Alert=new customalert();
+
+function result()
+  {
+   	score=0;
+   	
+   	if(document.f.r0.value=="A final class cannot extend other classes.")
+	  		score++;
+	 if(document.f.r1.value=="Error and Exception class")
+	 	  		score++;
+	if(document.f.r2.value=="10")
+		 	  		score++;
+	if(document.f.r3.value=="Bytecode is executed by JVM")
+			 	  	score++;
+	if(document.f.r4.value=="James Gosling")
+				 	  score++;
+	if(document.f.r5.value=="JVM")
+					 	  score++;
+	if(document.f.r6.value=="All of the above")
+						 	  score++;
+	if(document.f.r7.value=="Both A and B")
+							 	  score++;
+	if(document.f.r8.value=="go()")
+							 	  score++;
+	if(document.f.r9.value=="new")
+							 	  score++;
+	
+	Alert.render("You Scored "+parseInt(score*100/10)+"%");
+  	
+  	 if(score>=6)
+	   	 {
+	   	 	setTimeout(fun1, 5000);
+	   	 }
+	   	
+	   	 else
+	   	 {
+	   
+	   	 	setTimeout(fun2, 5000);
+  		 }
+  		
+   
+  }
+  function fun1()
+  {
+  	window.location="index.html";
+   }
+    function fun2()
+     {
+     
+     		window.location="index.html";
+     	
+   }
+  </script>
+  </head>
+  <body>
+  
+  <div id="dialogoverlay"></div>
+  <div id="dialogbox">
+  	<div>
+  		<div id="dialogboxhead"></div>
+  		<div id="dialogboxbody"></div>
+  		<div id="dialogboxfoot"></div>
+  	</div>
+</div>
+  
+<div class="container-fluid">
+<div class="row">
+</div></div>
+   <center><h1><font color="red" >Welcome to JAVA exam</font></h1>
+	<p><font color="red" size="2px">There are 10 multiple choice questions for each section.<br>
+                             Answering each question is mandatory.<br>	
+                             Please click the right answer and move to the next question to complete the assessment section.<br>	
+	                     Each question carries one mark.<br> No Negative marking.</font></p>
+<form name="f">
+<table width="80%" border="10">
+<tr bgcolor="#FFE4E1">
+<td width="40%" colspan="2" align="center">
+  <b>Q1.Which option is false about the final keyword?</b> </td>			
+  <td width="40%" colspan="2" align="center">
+  <b>Q2.Which of these classes are the direct subclasses of the Throwable class?</b>
+  </td>
+   </tr>
+   
+   <tr bgcolor="white">
+   <td width="20%">
+   <input type="radio" name="r0" value="A final method cannot be overridden in its subclasses.">A final method cannot be overridden in its subclasses.</input>
+   </td>
+   <td width="20%">
+    <input type="radio" name="r0" value="A final class cannot be extended.">A final class cannot be extended.</input>
+    </td>
+   <td width="20%">
+   <input type="radio" name="r1" value="RuntimeException and Error class">RuntimeException and Error class</input>
+   </td>
+   <td width="20%">
+       <input type="radio" name="r1" value="Exception and VirtualMachineError class">Exception and VirtualMachineError class</input>
+       </td>
+     </tr>
+     
+    <tr bgcolor="white">
+    <td width="20%">
+     <input type="radio" name="r0" value="A final class cannot extend other classes.">A final class cannot extend other classes.</input>
+     </td>
+     <td width="20%">
+      <input type="radio" name="r0" value="A final method can be inherited.">A final method can be inherited.</input>
+      </td>
+       <td width="20%">
+             <input type="radio" name="r1" value="Error and Exception class">Error and Exception class</input>
+        </td>
+         <td width="20%">
+              <input type="radio" name="r1" value="IOException and VirtualMachineError class">IOException and VirtualMachineError class</input>
+         </td>
+          </tr>
+          
+
+<tr bgcolor="#FFE4E1">
+<td width="40%" colspan="2" align="center">
+  <b>Q3.ArrayList list = new ArrayList();  <br>
+What is the initial quantity of the ArrayList list?
+</b> </td>			
+  <td width="40%" colspan="2" align="center">
+  <b>Q4.Which of the following option leads to the portability and security of Java?</b>
+  </td>
+   </tr>
+   
+   <tr bgcolor="white">
+   <td width="20%">
+   <input type="radio" name="r2" value="5">5</input>
+   </td>
+   <td width="20%">
+          <input type="radio" name="r2" value="10">10</input>
+     </td>
+  <td width="20%">
+   	   <input type="radio" name="r3" value="Bytecode is executed by JVM">Bytecode is executed by JVM</input>
+  </td>
+  <td width="20%">
+	          <input type="radio" name="r3" value="The applet makes the Java code secure and portable">The applet makes the Java code secure and portable</input>
+	 </td>
+	   </tr>
+     
+    <tr bgcolor="white">
+    <td width="20%">
+        <input type="radio" name="r2" value="0">0</input>
+        </td>
+        <td width="20%">
+         <input type="radio" name="r2" value="100">100</input>
+         </td>
+         <td width="20%">
+	 <input type="radio" name="r3" value="Use of exception handling">Use of exception handling</input>
+	 </td>
+	 <td width="20%">
+	            <input type="radio" name="r3" value="Dynamic binding between objects">Dynamic binding between objects</input>
+	            </td>
+	  </tr>
+
+
+<tr bgcolor="#FFE4E1">
+<td width="40%" colspan="2" align="center">
+  <b>Q5.Who is known as father of Java Programming Language?</b> </td>			
+  <td width="40%" colspan="2" align="center">
+  <b>Q6.Which provides runtime environment for java byte code to be executed?</b>
+  </td>
+   </tr>
+   
+   <tr bgcolor="white">
+      <td>
+   	    	   <input type="radio" name="r4" value="James Gosling">James Gosling</input>
+   	    </td>
+   	    <td>
+	          <input type="radio" name="r4" value="M. P Java">M. P Java</input>
+	      </td>
+	<td>
+   	  <input type="radio" name="r5" value="JDK">JDK</input>
+   	  </td>
+   	  <td>
+	          <input type="radio" name="r5" value="JVM">JVM</input>
+	     </td>
+	   </tr>
+     
+    <tr bgcolor="white">
+          <td>
+	           <input type="radio" name="r4" value="Charles Babbage">Charles Babbage</input>
+	           </td>
+	           <td>
+	            <input type="radio" name="r4" value="Blais Pascal">Blais Pascal</input>
+	            </td>
+	     <td>
+	           <input type="radio" name="r5" value="JRE">JRE</input>
+	          </td>
+	          <td>
+	            <input type="radio" name="r5" value="JAVAC">JAVAC</input>
+	            </td>
+	  </tr>
+
+          
+
+
+<tr bgcolor="#FFE4E1">
+<td width="40%" colspan="2" align="center">
+  <b>Q7.Which one is true about a constructor?<br> </td>			
+  <td width="40%" colspan="2" align="center">
+  <b>Q8.Data type long literals are appended by _____</b>
+  </td>
+   </tr>
+   
+   <tr bgcolor="white">
+  <td>
+   	     <input type="radio" name="r6" value="A constructor must have the same name as the class it is declared within.">A constructor must have the same name as the class it is declared within.</input>
+   	 </td>
+   	 <td>
+	            <input type="radio" name="r6" value="A constructor is used to create objects.">A constructor is used to create objects.</input>
+	       </td>
+<td>
+   	     <input type="radio" name="r7" value="Uppercase L">Uppercase L</input>
+   	</td>
+   	<td>
+	            <input type="radio" name="r7" value="Lowercase L">Lowercase L</input>
+	     </td>
+	   </tr>
+     
+    <tr bgcolor="white">
+	       <td>
+	             <input type="radio" name="r6" value="A constructor may be declared private">A constructor may be declared private</input>
+	             </td>
+	             <td>
+	             <input type="radio" name="r6" value="All of the above">All of the above</input>
+	             </td>
+	     <td>
+	             <input type="radio" name="r7" value="Long">Long</input>
+	        </td>
+	        <td>
+	              <input type="radio" name="r7" value="Both A and B">Both A and B</input>
+	           </td>
+	  </tr>
+
+
+
+
+<tr bgcolor="#FFE4E1">
+<td width="40%" colspan="2" align="center">
+  <b>Q9.Which of the following are not the methods of the Thread class?</b> </td>			
+  <td width="40%" colspan="2" align="center">
+  <b>Q10.Which of these operators is used to allocate memory to array variable in Java?</b>
+  </td>
+   </tr>
+   
+   <tr bgcolor="white">
+  <td>
+   	     	  <input type="radio" name="r8" value="yield()">yield()</input>
+   	  </td>
+   	  <td>
+		         <input type="radio" name="r8" value="sleep(long msec)">sleep(long msec)</input>
+		   </td>
+	 <td>
+   	     	  <input type="radio" name="r9" value="alloc">alloc</input>
+   	  </td>
+   	  <td>
+		         <input type="radio" name="r9" value="malloc">malloc</input>
+		  </td>
+	   </tr>
+     
+    <tr bgcolor="white">
+		   <td>
+		          <input type="radio" name="r8" value="go()">go()</input>
+		     </td>
+		     <td>
+		               <input type="radio" name="r8" value="stop()">stop()</input>
+		          </td>
+		   <td>
+		          <input type="radio" name="r9" value="new malloc">new malloc</input>
+		     </td>
+		      <td>
+		           <input type="radio" name="r9" value="new">new</input>
+		         </td>
+	  </tr>
+
+
+    </table>
+</form>
+<table width="100% auto">
+<tr>
+
+<td align="right">
+<input type="image" src="Submit.jpg" onClick="result()" alt="Submit" width="100" height="40" >
+
+</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>
